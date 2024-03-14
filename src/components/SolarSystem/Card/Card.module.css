@@ -1,0 +1,62 @@
+.card-component {
+  flex: 0 0 calc(33.33% - 40px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 330px;
+  background-color: var(--background);
+  border-radius: 10px;
+  margin: 5px;
+}
+.card-desc h2{
+  padding-top: 20px;
+  font-family: "SF Alien Encounters", sans-serif;
+  color: var(--main-color);
+}
+
+.card-component div p {
+  
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.btn-a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.card-component .continue-btn {
+  margin-top: 30px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-component .continue-btn:hover {
+  /* Adjust the shadow on hover for a cool effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.card-component img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.card-desc {
+  padding: 20px;
+  width: 440px;
+  
+}

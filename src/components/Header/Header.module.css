@@ -1,0 +1,87 @@
+.header {
+  font-family: "Dameron", sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.transparentBack {
+  background-color: transparent;
+}
+.defaultBack {
+  background-color: rgb(16, 15, 15);
+}
+.header-nav {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 1px 0;
+
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  transform: translateY(0); /* Initially, the nav is not transformed */
+}
+.hideNav {
+  transform: translateY(-100%);
+}
+
+.space-span {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.explorer-span {
+  color: var(--main-color);
+  padding-left: 5px;
+  letter-spacing: normal;
+  font-size: 32px;
+  font-family: "Dameron", sans-serif;
+}
+
+.nav-h1 {
+  margin: 10px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.header-nav ul li a:hover {
+  color: #ffffff;
+}
+.header-nav ul li a:visited {
+  color: #ffffff;
+}
+
+/* Hamburger menu */
+/* Define your existing styles */
+
+/* Hamburger Menu Icon Styles */
+.hamburgerIcon {
+  display: none; /* Hide by default */
+}
+
+/* Media Query for Small Screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .hamburgerIcon {
+    display: block; /* Show on small screens */
+  }
+
+  /* Hide the regular navigation links on small screens */
+  .navList {
+    display: none;
+  }
+
+  /* Additional styles for the mobile menu (you can define these) */
+}

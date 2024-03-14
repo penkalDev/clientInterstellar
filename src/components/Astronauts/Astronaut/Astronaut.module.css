@@ -1,0 +1,72 @@
+.card-component {
+  background-color: #ffffff;
+  height: 350px;
+  width: 480px;
+  background-color: var(--background);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-component div h2 {
+  margin-top: 20px;
+  font-family: "SF Alien Encounters", sans-serif;
+  color: var(--main-color);
+}
+
+.card-component div p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.btn-a {
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+
+  bottom: 5px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-component .continue-btn {
+  margin: 10px;
+
+  text-align: right;
+  color: #333;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border-radius: 5px;
+
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-component .continue-btn:hover {
+  /* Adjust the shadow on hover for a cool effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+.card-image {
+  display: flex;
+  gap: 15px;
+}
+.info {
+  display: flex;
+  margin: 20px;
+}
+
+.card-component img {
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  width: 200px;
+  height: 200px;
+}
+
+.card-desc {
+  padding: 0 20px;
+
+  height: 120px;
+}

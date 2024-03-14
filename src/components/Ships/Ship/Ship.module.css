@@ -1,0 +1,64 @@
+.card-component {
+    /* flex: 0 0 calc(33.33% - 40px); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 530px;
+    background-color: var(--background);
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  .card-component div p {
+    
+    
+    line-height: 1.2;
+  }
+  .shipName{
+    font-family: "SF Alien Encounters", sans-serif;
+    font-size: 3rem;
+    color: var(--main-color);
+  }
+  .ship-info p{
+    font-family: "SF Alien Encounters Solid", sans-serif;
+    font-size: 1.2rem;
+    padding-top: 10px;
+  }
+  
+  .btn-a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-component .continue-btn {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-component .continue-btn:hover {
+    /* Adjust the shadow on hover for a cool effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card-component img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    object-fit: contain;
+    width: 650px;
+    height: 450px;
+  }
+  
+  .card-desc {
+    padding: 0 20px;
+    width: 740px;
+  }

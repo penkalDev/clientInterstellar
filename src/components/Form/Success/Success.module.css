@@ -1,0 +1,11 @@
+.main {
+    margin: 0 auto;
+    padding: 8rem 3rem;
+    background-image: url("../../assets/astronaut-digital-1920x1080-12042.jpg");
+  }
+  .card-component {
+    padding-top: 30px;
+    background-color: var(--background);
+    text-align: center;
+    gap: 60px;
+  }

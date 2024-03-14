@@ -1,0 +1,55 @@
+.site-intro {
+  background-image: url("../../../assets/sunrise.jpg");
+
+  /* background-blend-mode: overlay; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  text-shadow: 2px 2px 5px #cc891d;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.intro {
+  padding-left: 70px;
+}
+
+.site-intro h2:first-child {
+  /* padding-left: 90px; */
+  padding-top: 220px;
+  font-weight: 600;
+  width: 45%;
+  font-size: 42px;
+}
+
+h2 span {
+  font-family: "Dameron", sans-serif;
+  color: var(--main-color);
+}
+
+.site-intro p {
+  width: 500px;
+  /* padding-left: 90px; */
+  padding-top: 10px;
+  font-size: 22px;
+}
+.btn-a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.continue-btn {
+  width: 300px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); */
+}
+.continue-btn:hover {
+  /* Adjust the shadow on hover for a cool effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.12);
+}

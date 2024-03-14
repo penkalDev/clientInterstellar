@@ -1,0 +1,53 @@
+/* Default styles for mobile screens */
+.main {
+  padding: 2rem; /* Adjusted padding for mobile using rems */
+  background-image: url("../../../src/assets/stars-galaxy-1920x1080-10307.webp");
+  background-size: cover; /* Use 'cover' for mobile screens */
+  background-position: center; /* Center the background image for mobile */
+}
+
+.cards {
+  padding: 1rem; /* Adjusted padding for mobile using rems */
+  display: flex;
+  flex-direction: column; /* Stack cards vertically on mobile */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Reduce the gap between cards for mobile using rems */
+}
+
+/* Default Media Query for Larger Screens (min-width: 769px) */
+@media (min-width: 769px) {
+  .main {
+    padding: 100px; /* Adjusted padding for larger screens */
+    background-size: contain; /* Use 'contain' for larger screens */
+  }
+
+  .cards {
+    /* Reset card layout for larger screens */
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Restore gap between cards for larger screens using rems */
+  }
+}
+
+/* .main {
+  padding: 100px ;
+  height: 100%;
+  background-image: url("../../../src/assets/stars-galaxy-1920x1080-10307.jpg");
+  
+  background-size: contain;
+}
+
+.cards {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+} */

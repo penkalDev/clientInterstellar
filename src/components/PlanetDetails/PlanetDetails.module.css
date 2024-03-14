@@ -1,0 +1,114 @@
+/* Default styles for mobile screens */
+
+.main {
+  margin: 0 auto;
+  padding: 2rem 0.5rem; /* Adjusted padding for mobile using rems */
+  background-image: url("../../assets/astronaut-digital-1920x1080-12042.webp");
+}
+
+.card-component {
+  margin-top: 3.5rem;
+  padding-top: 1.875rem; /* Adjusted padding for mobile using rems */
+  background-color: var(--background);
+  border-radius: 10px; /* Add border radius to all corners */
+  display: flex;
+  flex-direction: column; /* Stack cards vertically on mobile */
+  gap: 1.875rem; /* Reduce the gap between cards for mobile using rems */
+}
+
+.card-component img {
+  width: 100%; /* Make the image full-width for all screens */
+  height: auto; /* Maintain aspect ratio */
+  padding-top: 0;
+  /* Remove padding for mobile */
+}
+
+.card-desc {
+  width: 100%;
+  padding: 10px;
+  /* Make the description full-width for all screens */
+}
+
+.card-desc p {
+  font-size: 0.9375rem; /* Adjusted font size for mobile using rems */
+}
+
+.card-desc h4 {
+  font-family: "SF Alien Encounters Solid", sans-serif;
+}
+
+.btn-a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.continue-btn {
+  margin: 0.625rem; /* Adjusted margin for mobile using rems */
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border-radius: 10px; /* Add border radius to all corners of the button */
+  padding: 0.625rem; /* Adjusted padding for mobile using rems */
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1),
+    0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.08);
+}
+
+.continue-btn:hover {
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.15),
+    0 0.1875rem 0.375rem rgba(0, 0, 0, 0.12);
+}
+
+.card-component h3 {
+  color: var(--main-color);
+  margin: 1.25rem 0; /* Adjusted margin for mobile using rems */
+  font-size: 1.9rem; /* Adjusted font size for mobile using rems */
+  text-align: center;
+  font-family: "SF Alien Encounters", sans-serif;
+}
+
+h4 {
+  font-size: 1rem; /* Adjusted font size for mobile using rems */
+  margin: 0.625rem 0; /* Adjusted margin for mobile using rems */
+}
+
+/* Media Query for Larger Screens (min-width: 769px) */
+@media (min-width: 48.125em) {
+  .main {
+    padding: 2rem 3rem; /* Adjusted padding for larger screens using rems */
+  }
+
+  .card-component {
+    flex-direction: row; /* Reset card layout for larger screens */
+    gap: 9rem;
+    border-radius: 10px; /* Add border radius to all corners */
+  }
+
+  .card-component img {
+    height: 31.25rem; /* Restore image height for larger screens using rems */
+    width: 31.25rem;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    border: transparent;
+  }
+  
+  .card-desc {
+    width: 50%;
+    padding-left: 2rem; /* Restore description width for larger screens */
+  }
+
+  .card-desc p {
+    font-size: 1.25rem; /* Restore font size for larger screens using rems */
+  }
+  .card-desc h4 {
+    font-size: 1.3rem;
+  }
+
+  .card-component h3 {
+    padding-top: 1.2rem;
+    font-size: 3rem; /* Restore header font size for larger screens using rems */
+  }
+}
