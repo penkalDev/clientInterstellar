@@ -2,6 +2,7 @@
 
 .main {
   margin: 0 auto;
+
   padding: 2rem 0.5rem; /* Adjusted padding for mobile using rems */
   background-image: url("../../assets/astronaut-digital-1920x1080-12042.webp");
 }
@@ -30,7 +31,9 @@
 }
 
 .card-desc p {
-  font-size: 0.9375rem; /* Adjusted font size for mobile using rems */
+  font-size: 0.9375rem;
+  padding-inline: 1rem;
+  /* Adjusted font size for mobile using rems */
 }
 
 .card-desc h4 {
@@ -78,7 +81,7 @@ h4 {
 /* Media Query for Larger Screens (min-width: 769px) */
 @media (min-width: 48.125em) {
   .main {
-    padding: 2rem 3rem; /* Adjusted padding for larger screens using rems */
+    padding: 3.4rem 3rem; /* Adjusted padding for larger screens using rems */
   }
 
   .card-component {
@@ -94,7 +97,7 @@ h4 {
     padding-left: 4rem;
     border: transparent;
   }
-  
+
   .card-desc {
     width: 50%;
     padding-left: 2rem; /* Restore description width for larger screens */

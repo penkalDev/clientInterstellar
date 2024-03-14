@@ -109,7 +109,8 @@ export default function Header() {
             }}
           >
             <span className={styles["space-span"]}>Interstellar</span>
-            <span className={styles["explorer-span"]}>Traveler</span>&trade;
+            <span className={styles["explorer-span"]}>Traveler</span><span style={{ color: "var(--main-color)" }}>&trade;</span>
+
           </NavLink>
         </h1>
       </nav>

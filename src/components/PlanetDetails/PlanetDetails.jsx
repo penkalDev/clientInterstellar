@@ -10,48 +10,54 @@ import fetchData from "../../services/dataFetcher.js";
 const PlanetDetails = () => {
   const { planetId } = useParams();
   const [planetDetails, setPlanetDetails] = useState([]);
-  //const url = `/src/data/details.json`;
-  //const url =`http://localhost:3001/api/planets/`
+
   const url = config.serverUrl + "/api/planets";
 
   useEffect(() => {
-    fetchData(url) // Adjust the path to your JSON file
+    fetchData(url)
       .then((fetchedData) => {
-        if (fetchedData && fetchedData[planetId]) {
-          setPlanetDetails(fetchedData[planetId]);
+        if (fetchedData) {
+          const sortedPlanets = Object.values(fetchedData).sort((a, b) => {
+            return a.id - b.id;
+          });
+          setPlanetDetails(sortedPlanets);
         } else {
-          console.error(`Planet with ID ${planetId} not found.`);
+          console.error("No data fetched.");
         }
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, [planetId, url]);
+  }, [url]);
+
+  
+  const planetIndex = parseInt(planetId);
+  const selectedPlanet = planetDetails[planetIndex];
 
   return (
     <main className={styles["main"]}>
       <section className={styles["card-component"]}>
         <div className={styles["card-desc"]}>
-          <h3>{planetDetails.name}</h3>
-          <p>{planetDetails.description}</p>
+          <h3>{selectedPlanet?.name}</h3>
+          <p>{selectedPlanet?.description}</p>
           <h4>I. Details</h4>
-          <p>{planetDetails.details}</p>
+          <p>{selectedPlanet?.details}</p>
           <h4>II. Journey Duration</h4>
-          <p>{planetDetails.duration}</p>
+          <p>{selectedPlanet?.duration}</p>
           <h4>III. Spaceship</h4>
-          <p>{planetDetails.spaceship}</p>
+          <p>{selectedPlanet?.spaceship}</p>
           <h4>IV. Crew</h4>
-          <p>{planetDetails.crew}</p>
+          <p>{selectedPlanet?.crew}</p>
           <h4>V. Price</h4>
-          <p>{planetDetails.price}</p>
+          <p>{selectedPlanet?.price}</p>
           <Link to={`/solarSystem`} className={styles["btn-a"]}>
             <div className={styles["continue-btn"]}>Go back</div>
           </Link>
         </div>
         <div className="planetImg">
           <img
-            src={planetDetails.image}
-            alt={planetDetails.name}
+            src={selectedPlanet?.image}
+            alt={selectedPlanet?.name}
             loading="lazy"
           />
         </div>
