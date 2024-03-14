@@ -7,21 +7,20 @@ export default function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const url = config.serverUrl + "/api/posts/create";
-    
+
     const formData = new FormData(e.target);
+    const { email, query, destination } = Object.fromEntries(formData);
+
     const data = {
-      email: formData.get("email"),
-      query: formData.get("query"),
-      destination: formData.get("destination"),
+      email,
+      query,
+      destination,
     };
     // You can perform actions with the form data here, e.g., submit it to an API
     console.log("Form data submitted:");
     console.log(data);
     try {
-      const res = await axios.post(
-        url,
-        data
-      );
+      const res = await axios.post(url, data);
 
       if (res.status === 201) {
         Swal.fire({
