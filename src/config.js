@@ -1,8 +1,7 @@
 // config.js
 
 const config = {
-  serverUrl: "https://serverinterstellar.onrender.com",
- 
+  serverUrl: "https://interstellarapi.cyclic.app",
 };
 
 export default config;
