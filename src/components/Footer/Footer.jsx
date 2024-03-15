@@ -23,11 +23,11 @@ export default function Footer() {
       <div className={styles["lower-footer"]}>
         <h1>
           <span className={styles["space-span"]}>Interstellar</span>
-          <span className={styles["explorer-span"]}>Traveler</span>&trade;
+          <span className={styles["explorer-span"]}>Traveler</span>
+          <span style={{ color: "var(--main-color)" }}>&trade;</span>
         </h1>
       </div>
       <span>&copy; 2023 Designed by Mateusz Penkal</span>
-      
     </footer>
   );
 }
