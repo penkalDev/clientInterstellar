@@ -4,7 +4,6 @@
   height: 100%;
   background-image: url("../../../src/assets/stars-galaxy-1920x1080-10307.webp");
   background-position: center;
-  
 }
 
 .cards {
@@ -13,6 +12,53 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
+
   gap: 20px;
+}
+
+/* .loading-message {
+  
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  height: 500px;
+  background-color: var(--background);
+  margin: 30px;
+  
+} */
+@keyframes load {
+  0% {
+    opacity: 0.08;
+    /*         font-size: 10px; */
+    /* 				font-weight: 400; */
+    filter: blur(5px);
+    letter-spacing: 3px;
+  }
+  100% {
+    /*         opacity: 1; */
+    /*         font-size: 12px; */
+    /* 				font-weight:600; */
+    /* 				filter: blur(0); */
+  }
+}
+.loading-screen {
+  height: 500px;
+  background-color: var(--background);
+  margin: 30px;
+  border-radius: 10px;
+}
+.loading-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 100%;
+  margin: auto;
+  color: var(--main-color);
+
+  animation: load 1.1s infinite 0s ease-in-out;
+  animation-direction: alternate;
+  text-shadow: 0 0 1px white;
 }

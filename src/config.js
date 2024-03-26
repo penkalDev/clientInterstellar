@@ -1,7 +1,7 @@
 // config.js
 
 const config = {
-  serverUrl: "https://interstellarapi.cyclic.app",
+ serverUrl: "https://interstellarapi.cyclic.app",
 };
 
 export default config;

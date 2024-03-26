@@ -91,11 +91,15 @@ h4 {
   }
 
   .card-component img {
-    height: 31.25rem; /* Restore image height for larger screens using rems */
+    height: 31.25rem;
     width: 31.25rem;
     padding-top: 5rem;
     padding-left: 4rem;
-    border: transparent;
+    border: 0;
+    vertical-align: top;
+
+    background-color: transparent;
+    background-color: transparent;
   }
 
   .card-desc {

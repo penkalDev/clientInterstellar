@@ -30,7 +30,6 @@ const PlanetDetails = () => {
       });
   }, [url]);
 
-  
   const planetIndex = parseInt(planetId);
   const selectedPlanet = planetDetails[planetIndex];
 

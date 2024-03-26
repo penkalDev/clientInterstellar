@@ -50,7 +50,7 @@ const SolarSystem = () => {
       try {
         fetchDataTimeout = setTimeout(() => {
           setShowLoadingMessage(true); // Wyświetlamy komunikat po upływie 1 sekundy
-        }, 1000);
+        }, 200);
 
         const fetchedData = await fetchData(url);
         clearTimeout(fetchDataTimeout); // Usuwamy timeout, jeśli pobranie danych zakończy się pomyślnie
@@ -73,9 +73,9 @@ const SolarSystem = () => {
 
   return (
     <main className={styles["main"]}>
-      {showLoadingMessage && ( // Wyświetlamy komunikat tylko wtedy, gdy showLoadingMessage jest true
-        <div className={styles["loading-message"]}>
-          Connecting to server...
+      {showLoadingMessage && (
+        <div className={styles["loading-screen"]}>
+          <p className={styles["loading-message"]}>Connecting to server...</p>
         </div>
       )}
       <section className={styles["cards"]}>
