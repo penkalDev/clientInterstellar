@@ -3,7 +3,7 @@ import styles from "../Timer/Timer.module.css";
 import { Link } from "react-router-dom";
 
 const CountdownClock = () => {
-  const targetDate = new Date("2024-08-26T23:59:59").getTime();
+  const targetDate = new Date("2025-08-26T23:59:59").getTime();
   const [timeRemaining, setTimeRemaining] = useState({
     days: 0,
     hours: 0,
