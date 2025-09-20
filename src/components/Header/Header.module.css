@@ -3,13 +3,16 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
+
 }
 
 .transparentBack {
   background-color: transparent;
 }
 .defaultBack {
-  background-color: rgb(16, 15, 15);
+  background-color: rgba(16, 15, 15,0.3);
+  backdrop-filter: blur(20px);
 }
 .header-nav {
   z-index: 5;
@@ -17,7 +20,8 @@
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  padding: 1px 0;
+  /* padding: 10px 0; */
+ 
 
   transition: transform 0.3s ease; /* Add a smooth transition effect */
   transform: translateY(0); /* Initially, the nav is not transformed */
