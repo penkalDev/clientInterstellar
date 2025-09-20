@@ -8,14 +8,13 @@
   border-radius: 10px;
   margin: 5px;
 }
-.card-desc h2{
+.card-desc h2 {
   padding-top: 20px;
   font-family: "SF Alien Encounters", sans-serif;
   color: var(--main-color);
 }
 
 .card-component div p {
-  
   line-height: 1.2;
   font-size: 16px;
 }
@@ -26,7 +25,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .card-component .continue-btn {
@@ -58,5 +57,14 @@
 .card-desc {
   padding: 20px;
   width: 440px;
-  
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .card-component img {
+    padding-top: 30px;
+  }
+  .card-component {
+    flex-direction: column;
+  }
 }
